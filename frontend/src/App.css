@@ -36,8 +36,8 @@
   float: right;
 }
 
-.home{
-  width:100%;
+.home {
+  width: 100%;
 }
 
 #header {
@@ -52,14 +52,14 @@
   }
 }
 
-@media screen and (min-width:768px){
-  #header{
-    height:60vh;
+@media screen and (min-width: 768px) {
+  #header {
+    height: 60vh;
   }
 }
 
-@media screen and (min-width:1px){
-  #header{
-    height:40vh;
+@media screen and (min-width: 1px) {
+  #header {
+    height: 40vh;
   }
 }

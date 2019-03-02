@@ -1,0 +1,20 @@
+.navBar {
+  background-color: black;
+  width: 100vw;
+  position: sticky;
+}
+
+#logo {
+  margin-left: 3vw;
+}
+
+#loginButton {
+  margin-top: 2vh;
+  margin-left: 70%;
+  height: 6vh;
+  color: black;
+}
+
+#loginButton h3 {
+  margin-top: -0.5vh;
+}

@@ -3,7 +3,11 @@
   width: 100vw;
 }
 
+#logo {
+  margin-left: 5%;
+}
+
 #loginButton {
   margin-top: 2vh;
-  margin-left: 50%;
+  margin-left: 70%;
 }

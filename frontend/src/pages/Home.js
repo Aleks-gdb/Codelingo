@@ -5,7 +5,7 @@ import Header from './Header';
 export default class HomePage extends Component {
     render() {
         return (
-            <div>
+            <div className="home">
                 <Navigation />
                 <Header />
             </div>

@@ -35,3 +35,10 @@
 .loginbutton {
   float: right;
 }
+
+#header {
+  background-image: url(./images/Space_background.jpg);
+  height: 80vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+}

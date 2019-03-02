@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation';
+import Navigation from '../Components/Navigation';
+import Header from './Header';
 
 export default class HomePage extends Component {
     render() {
-        <div>
-            <Navigation />
-        </div>
+        return (
+            <div>
+                <Navigation />
+                <Header />
+            </div>
+        );
     }
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 import Navigation from './Components/Navigation';
+import Home from './pages/Home';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header"> 
-          <Navigation />
+          <Home />
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.

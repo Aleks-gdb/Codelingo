@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Route, BrowserRouter } from "react-router-dom";
+import HomePage from '../pages/Home';
 
 export default class Routes extends Component {
   render() {
@@ -12,3 +13,4 @@ export default class Routes extends Component {
     );
   }
 }
+

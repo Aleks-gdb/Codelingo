@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
 import { registerUser } from "../actions/authentication";
+import classnames from "classnames";
 
 class Register extends Component {
   constructor() {
@@ -45,6 +46,7 @@ class Register extends Component {
   }
 
   render() {
+    const { errors } = this.state;
     return (
       <div className="container" style={{ marginTop: "50px" }}>
         <h2 style={{ marginBottom: "40px" }}>Registration</h2>
@@ -53,41 +55,61 @@ class Register extends Component {
             <input
               type="text"
               placeholder="Name"
-              className="form-control"
+              className={classnames("form-control form-control-lg", {
+                "is-invalid": errors.name
+              })}
               name="name"
               onChange={this.handleInputChange}
               value={this.state.name}
             />
+            {errors.name && (
+              <div className="invalid-feedback">{errors.name}</div>
+            )}
           </div>
           <div className="form-group">
             <input
               type="email"
               placeholder="Email"
-              className="form-control"
+              className={classnames("form-control form-control-lg", {
+                "is-invalid": errors.name
+              })}
               name="email"
               onChange={this.handleInputChange}
               value={this.state.email}
             />
+            {errors.email && (
+              <div className="invalid-feedback">{errors.email}</div>
+            )}
           </div>
           <div className="form-group">
             <input
               type="password"
               placeholder="Password"
-              className="form-control"
+              className={classnames("form-control form-control-lg", {
+                "is-invalid": errors.name
+              })}
               name="password"
               onChange={this.handleInputChange}
               value={this.state.password}
             />
+            {errors.password && (
+              <div className="invalid-feedback">{errors.password}</div>
+            )}
           </div>
           <div className="form-group">
             <input
               type="password"
               placeholder="Confirm Password"
-              className="form-control"
+              className={classnames("form-control form-control-lg", {
+                "is-invalid": errors.password_confirm
+              })}
               name="password_confirm"
               onChange={this.handleInputChange}
               value={this.state.password_confirm}
             />
+            {errors.password_confirm && (
+              <div classname="invalid-feedback">{errors.password_confirm}</div>
+            )}
           </div>
           <div className="form-group">
             <button type="submit" className="btn btn-primary">

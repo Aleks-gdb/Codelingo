@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "./logo.svg";
-import Navigation from "./Components/Navigation";
 import Home from "./pages/Home";
 import Routes from "./Components/Routes";
 import { Provider } from "react-redux";
@@ -18,7 +16,7 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <header className="App-header">
-            <Home />
+            <Navigation />
             <Routes />
           </header>
         </div>

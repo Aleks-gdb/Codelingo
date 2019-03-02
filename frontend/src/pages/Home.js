@@ -8,34 +8,26 @@ class HomePage extends Component {
   render() {
     return (
       <Container className="homePage fullscreen" fluid>
-        <Navigation />
-
         <div id="space">
           <Row>
-            <Col md={12}>
-              <Row id="registrationText">
-                <Col md={4} align="center">
-                  <h2>Make your coding skills out of this world</h2>
-                </Col>
-              </Row>
-              <Row id="registrationButton">
-                <Col>
-                  <Button id="registerPress" variant="success" size="lg">
-                    <Col md={6}>
-                      <h3>Register</h3>
-                    </Col>
-                  </Button>
-                </Col>
-              </Row>
+            <Col md={6}>
+              <div className="registration">
+                <h2 className="registrationText">
+                  Make your coding skills out of this world
+                </h2>
+                <Button id="registrationButton" variant="success" className="mr-auto" size="lg">
+                  <h3>Register</h3>
+                </Button>
+              </div>
             </Col>
           </Row>
         </div>
-        <Row id="appDescription">
+        <div className="container-fluid" id="appDescription">
           <Row id="appDescriptionElements">
-            <Col md={6} align="center">
-              <Image id="laptop" src={laptop} width="300" height="300" fluid />
+            <Col sm={6} align="center">
+              <Image id="laptop" src={laptop} width="250" height="250" fluid />
             </Col>
-            <Col md={6}>
+            <Col sm={6}>
               <Row>
                 <Col md={12} align="left">
                   <h2>Learn and Improve your programming skills.</h2>
@@ -57,7 +49,7 @@ class HomePage extends Component {
               </Row>
             </Col>
           </Row>
-        </Row>
+        </div>
       </Container>
     );
   }

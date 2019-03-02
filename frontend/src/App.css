@@ -63,3 +63,15 @@
     height: 40vh;
   }
 }
+
+.center-align{
+  text-align:center;
+}
+.navbar{
+  margin-bottom:0px;
+  width:100%
+}
+
+.row{
+  width:100%;
+}

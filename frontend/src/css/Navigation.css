@@ -4,17 +4,24 @@
   position: sticky;
 }
 
+.logo{
+  height:4rem;
+  margin-left:15vw;
+}
+
 #logo {
-  margin-left: 3vw;
+  margin-left: vw;
 }
 
 #loginButton {
-  margin-top: 2vh;
-  margin-left: 70%;
-  height: 6vh;
   color: black;
+  margin-top:-1rem;
 }
 
-#loginButton h3 {
-  margin-top: -0.5vh;
+@media screen and (min-width:768px){
+  #loginButton{
+    margin-right:20vw;
+  }
 }
+
+

@@ -8,6 +8,7 @@ export default class Routes extends Component {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/Courses" component={Courses} />
         </div>
       </BrowserRouter>
     );

@@ -1,25 +1,25 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
+  "name": "squiz-backend",
+  "version": "0.1.0",
+  "description": "express and mongoDB backend for squiz",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Carl Costa, Brandon Pitcher, Philip Poppler, Dennis McCannon, Ernest Arreola",
+  "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.0",
-    "mongoose": "^5.4.16",
+    "mongoose": "^5.4.11",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "validator": "^10.11.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
-  },
-  "proxy":"localhost://4000"
+  }
 }

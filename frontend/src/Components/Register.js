@@ -8,7 +8,7 @@ class Register extends Component {
   constructor() {
     super();
     this.state = {
-      username: "",
+      name: "",
       email: "",
       password: "",
       password_confirm: "",
@@ -28,7 +28,7 @@ class Register extends Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = {
-      username: this.state.username,
+      name: this.state.name,
       email: this.state.email,
       password: this.state.password,
       password_confirm: this.state.password_confirm

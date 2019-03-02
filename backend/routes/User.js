@@ -1,14 +1,14 @@
 const express = require('express');
 const router = express.Router();
+const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
-const validateRegisterInput = require('../validators/register_validation');
-const validateLoginInput = require('../validators/login_validation');
 const bodyParser = require('body-parser');
+const validateRegisterInput = require('../validation/register');
+const validateLoginInput = require('../validation/login');
 
 const User = require('../models/User');
-
 
 router.use(bodyParser.urlencoded({extended: false}));
 router.use(bodyParser.json());
@@ -30,10 +30,16 @@ router.post('/register', function (req, res) {
       });
     }
     else {
+      const avatar = gravatar.url(req.body.email, {
+        s: '200',
+        r: 'pg',
+        d: 'mm'
+      });
       const newUser = new User({
-        username: req.body.username,
+        name: req.body.name,
         email: req.body.email,
         password: req.body.password,
+        avatar
       });
       // const hashedPassword = await bcrypt.hash(newUser.pasword, 10)
       // newUser.password = hashedPassword;
@@ -83,7 +89,7 @@ router.post('/login', (req, res) => {
           if (isMatch) {
             const payload = {
               id: user.id,
-              username: user.username,
+              name: user.name,
               avatar: user.avatar
             }
             jwt.sign(payload, 'secret', {
@@ -109,7 +115,7 @@ router.post('/login', (req, res) => {
 router.get('/me', passport.authenticate('jwt', { session: false }), (req, res) => {
   return res.json({
     id: req.user.id,
-    username: req.user.username,
+    name: req.user.name,
     email: req.user.email
   });
 });

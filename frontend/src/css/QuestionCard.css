@@ -1,0 +1,15 @@
+.questionCard {
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
+  border-radius: 20px;
+  width: 25vw;
+  height: 20vh;
+}
+
+.questionCard h1 {
+  color: white;
+  text-align: center;
+  margin-top: 5vh;
+}

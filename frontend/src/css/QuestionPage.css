@@ -1,0 +1,13 @@
+.questionPage {
+  background-color: black;
+  height: 100vh;
+}
+
+.questionPage h1 {
+  color: white;
+  margin-top: 10vh;
+}
+
+#qCards {
+  display: inline;
+}

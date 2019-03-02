@@ -6,30 +6,25 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
+    NavLink} from 'reactstrap';
 
 export default class Navigation extends Component {
 	constructor(props) {
 		super(props);
-
-		this.toggle = this.toggle.bind(this);
-		this.state = {
-			isOpen: false
-		};
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+          isOpen: false
+        };
     }
-    toggle() {
+      toggle() {
         this.setState({
-            isOpen: !this.state.isOpen
+          isOpen: !this.state.isOpen
         });
     }
     render() {
         return (
             <div>
-                <Navbar color = "dark" dark expand="md">
+                <Navbar color = "dark">
                     <NavbarBrand href ="/">Codelingo</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>

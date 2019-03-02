@@ -17,3 +17,16 @@ html {
   margin-top: 5vh;
   margin-left: 25vw;
 }
+
+#appDescription {
+  background: silver;
+  height: 100vh;
+}
+
+#appDescriptionElements {
+  margin-top: 50vh;
+}
+
+#appDescriptionElements p {
+  font-size: 2vh;
+}

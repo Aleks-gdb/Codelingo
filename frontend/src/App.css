@@ -6,3 +6,14 @@ html {
   width: 100vw;
   padding-left: 0;
 }
+
+#registrationText {
+  margin-top: -55vh;
+  margin-left: 15vw;
+  color: white;
+}
+
+#registrationButton {
+  margin-top: 5vh;
+  margin-left: 25vw;
+}

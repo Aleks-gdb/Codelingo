@@ -1,31 +1,35 @@
-import React, { Component } from 'react';
-import { Navbar, Nav, NavItem} from 'react-bootstrap';
+import React, { Component } from "react";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import "../css/Navigation.css";
+import logo from "../images/codelingo logo.png";
+export default class Navigation extends Component {
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
 
-export default class Navigation extends React.Component {
-	constructor(props) {
-		super(props);
-        this.toggle = this.toggle.bind(this);
-        this.state = {
-          isOpen: false
-        };
-    }
-      toggle() {
-        this.setState({
-          isOpen: !this.state.isOpen
-        });
-    }
-    render() {
-        return (
-            <div>
-                <Navbar fixed="top" bg="dark" expand="lg" >
-                <Navbar.Brand href="#home">Codelingo</Navbar.Brand>
-                <Navbar.Collapse>
-                    <Nav className ="loginbutton" pushRight>
-                        <NavItem className="item" eventKey={1} href="#login">Login</NavItem>
-                    </Nav>
-                </Navbar.Collapse>
-                </Navbar>
-            </div>
-        )
-    }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <Container className="fullscreen" style={{ backgroundColor: "black" }}>
+        <Row className="navBar">
+          <Col md={6}>
+            <Image src={logo} width="200" height="75" />
+          </Col>
+          <Col md={6}>
+            <Button id="loginButton" variant="success" size="lg">
+              <Col md={4}>Login</Col>
+            </Button>
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
 }

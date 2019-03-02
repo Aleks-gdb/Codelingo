@@ -1,0 +1,7 @@
+{
+  "Question": {
+    "text": "How do I write a function in python?",
+    "answers": ["define foo():", "def foo():", "function foo(): "],
+    "correct_answer": "def foo()"
+  }
+}

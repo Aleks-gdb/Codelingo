@@ -25,7 +25,9 @@ export default class Navigation extends Component {
           </Col>
           <Col md={6}>
             <Button id="loginButton" variant="success" size="lg">
-              <Col md={4}>Login</Col>
+              <Col md={4}>
+                <h3> Login</h3>
+              </Col>
             </Button>
           </Col>
         </Row>

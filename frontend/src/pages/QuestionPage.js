@@ -28,7 +28,7 @@ class QuestionPage extends Component {
             </Col>
           </Row>
 
-          <Row id="qCards">
+          <Row id="qCards" fluid>
             <Col md={4}>
               <QuestionCard answer={j.Question.answers[0]} />
             </Col>

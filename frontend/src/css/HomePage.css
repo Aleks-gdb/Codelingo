@@ -1,0 +1,61 @@
+html {
+  background-color: black;
+  font-family: "Rubik", sans-serif;
+}
+
+.fullscreen {
+  width: 100vw;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+#space {
+  background-image: url("../images/Space_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 52vh;
+}
+
+#registrationText {
+  margin-top: 10vh;
+  margin-left: 15vw;
+  color: white;
+}
+
+#registrationText h2 {
+  font-weight: bold;
+}
+
+#registrationButton {
+  margin-top: 5vh;
+  margin-left: 22vw;
+  height: 4vh;
+}
+
+#registerPress {
+  height: 7vh;
+  width: 15vw;
+}
+
+#registerPress h3 {
+  margin-top: 0vh;
+  margin-left: 2vw;
+}
+
+#appDescription {
+  background: silver;
+  height: 70vh;
+}
+
+#appDescriptionElements {
+  margin-top: 15vh;
+}
+
+#appDescriptionElements p {
+  font-size: 2vh;
+}

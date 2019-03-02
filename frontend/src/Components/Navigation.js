@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem} from 'react-bootstrap';
 
-export default class Navigation extends Component {
+export default class Navigation extends React.Component {
 	constructor(props) {
 		super(props);
         this.toggle = this.toggle.bind(this);
@@ -20,8 +20,8 @@ export default class Navigation extends Component {
                 <Navbar fixed="top" bg="dark" expand="lg" >
                 <Navbar.Brand href="#home">Codelingo</Navbar.Brand>
                 <Navbar.Collapse>
-                    <Nav pullRight>
-                        <NavItem eventKey={1} href="#login">Login</NavItem>
+                    <Nav className ="loginbutton" pushRight>
+                        <NavItem className="item" eventKey={1} href="#login">Login</NavItem>
                     </Nav>
                 </Navbar.Collapse>
                 </Navbar>

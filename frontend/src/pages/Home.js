@@ -3,28 +3,34 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import Navigation from "../Components/Navigation";
 import space from "../images/Space_background.jpg";
 import laptop from "../images/laptop.png";
+
+import "../css/HomePage.css";
 class HomePage extends Component {
   render() {
     return (
-      <Container className="homePage fullscreen">
+      <Container className="homePage fullscreen" fluid>
         <Navigation />
-        <Row id="space">
-          <Col md={12}>
-            <Image src={space} width="auto" height="auto" fluid />
-            <Row id="registrationText">
-              <Col md={4} align="center">
-                <h2>Make your coding skills out of this world</h2>
-              </Col>
-            </Row>
-            <Row id="registrationButton">
-              <Col>
-                <Button variant="success" size="lg">
-                  <Col md={5}>Register</Col>
-                </Button>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+
+        <div id="space">
+          <Row>
+            <Col md={12}>
+              <Row id="registrationText">
+                <Col md={4} align="center">
+                  <h2>Make your coding skills out of this world</h2>
+                </Col>
+              </Row>
+              <Row id="registrationButton">
+                <Col>
+                  <Button id="registerPress" variant="success" size="lg">
+                    <Col md={6}>
+                      <h3>Register</h3>
+                    </Col>
+                  </Button>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </div>
         <Row id="appDescription">
           <Row id="appDescriptionElements">
             <Col md={6} align="center">
@@ -58,4 +64,9 @@ class HomePage extends Component {
   }
 }
 
+/*
+
+<Image src={space} width="auto" height="auto" fluid />
+
+*/
 export default HomePage;

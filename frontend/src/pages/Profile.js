@@ -9,7 +9,7 @@ class Profile extends Component {
       <div id="background">
       <UserNav/>
         <br />
-        <p>Welcome, Aleks!</p>
+        <p>Welcome, Philip!</p>
         <div id="bars">
         <center>
         <a href="../module"><Button id="links">

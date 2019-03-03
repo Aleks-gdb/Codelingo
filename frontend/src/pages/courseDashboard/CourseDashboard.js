@@ -15,16 +15,19 @@ export default class CourseDashboard extends Component{
             <Container className="courseDashboard">
                 <Row>
                     <Col>
+                    <p>Module</p>
                     <img src={happyPlanet} className="planet" alt="module"/>
                     </Col>
                     <Col></Col>
                     <Col></Col>
                     <Col>
-                    <img src={neutralPlanet} className="planet" alt="module"/>
+                    <p>Module</p>
+                    <a href="../questions"><img src={neutralPlanet} className="planet" alt="module"/></a>
                     </Col>
                     <Col></Col>
                     <Col></Col>
                     <Col>
+                    <p>Module</p>
                     <img src={sadPlanet} className="planet" alt="module"/>
                     </Col>
                 </Row>
@@ -41,11 +44,13 @@ export default class CourseDashboard extends Component{
                     <Col></Col>
                     <Col></Col>
                     <Col>
+                    <p>Module</p>
                     <img src={happyPlanet} className="planet" alt="module"/>
                     </Col>
                     <Col></Col>
                     <Col></Col>
                     <Col>
+                    <p>Module</p>
                     <img src={sadPlanet} className="planet" alt="module"/>
                     </Col>
                     <Col></Col>

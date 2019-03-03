@@ -1,6 +1,6 @@
-import React, {Component} from "react";
-import {Row,Col,Image, Button, ProgressBar} from "react-bootstrap";
-import Container from 'react-bootstrap/Container';
+import React, { Component } from "react";
+import { Row, Col, Image, Button, ProgressBar } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
 import Navigation from "../../Components/UserNav";
 import happyPlanet from "../../images/Happy Planet.png";
 import sadPlanet from "../../images/Sad Planet.png";

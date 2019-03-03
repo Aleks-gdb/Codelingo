@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Button } from "react-bootstrap";
-import Container from 'react-bootstrap/Container';
+import { Form } from "react-bootstrap";
 import "../css/QuestionCard.css";
 class QuestionCard extends Component {
   constructor(props) {
@@ -10,13 +9,14 @@ class QuestionCard extends Component {
 
   render() {
     return (
-      <Container className="questionCard">
-        <Row>
-          <Col>
-            <h1>{this.props.answer}</h1>
-          </Col>
-        </Row>
-      </Container>
+      <Form.Check
+        className="questionCard"
+        type={"radio"}
+        id={this.props.answer}
+        name="answer"
+        value={this.props.answer}
+        label={<h1>{this.props.answer}</h1>}
+      />
     );
   }
 }

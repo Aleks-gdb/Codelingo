@@ -31,7 +31,7 @@ require('./passport')(passport);
 const PORT = process.env.PORT || 4000;
 
 app.use('/api/users', users);
-app.use('/python', python);
+app.use('/api/python', python);
 app.get('/', function (req, res) {
   res.send('hello');
 });

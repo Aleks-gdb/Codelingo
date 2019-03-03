@@ -31,20 +31,14 @@ class HomePage extends Component {
             <Col sm={6}>
               <Row>
                 <Col md={12} align="left" style={{color:"#171717"}} className="Rubik">
-                  <h2>Learn and Improve your programming skills.</h2>
+                  <h2>Learn and improve your programming skills.</h2>
                 </Col>
               </Row>
               <Row>
                 <Col md={10} align="left">
                   <p style={{color:"#505050"}} className="Rubik">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum."
+                  Codelingo makes learning a programming language easy and fun! Our modules are perfect for beginning programmers or seasoned professionals looking to pick up a new programming language! Practice anywhere and anytime.<br /><br /> 
+                  Courses now available in Python, Java, and Data Structures and Algorithms.
                   </p>
                 </Col>
               </Row>

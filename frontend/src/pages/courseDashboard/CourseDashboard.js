@@ -57,8 +57,8 @@ export default class CourseDashboard extends Component{
                 </Row><br /><br /><br />
                 <center>
                     <ProgressBar style={{ maxWidth: 1000, minHeight: 25 }}>
-                        <ProgressBar striped variant="success" now={40} key={1}/>
-                        <ProgressBar striped variant="warning" now={20} key={2}/>
+                        <ProgressBar striped variant="success" animated now={40} key={1}/>
+                        <ProgressBar striped variant="warning" animated now={20} key={2}/>
                     </ProgressBar ><br />
                     <h1>Python</h1>
                 </center>

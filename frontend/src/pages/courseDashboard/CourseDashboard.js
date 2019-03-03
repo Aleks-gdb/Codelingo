@@ -15,19 +15,19 @@ export default class CourseDashboard extends Component{
             <Container className="courseDashboard">
                 <Row>
                     <Col>
-                    <p>Module</p>
+                    <p>Variables</p>
                     <img src={happyPlanet} className="planet" alt="module"/>
                     </Col>
                     <Col></Col>
                     <Col></Col>
                     <Col>
-                    <p>Module</p>
+                    <p>Keywords</p>
                     <a href="../questions"><img src={neutralPlanet} className="planet" alt="module"/></a>
                     </Col>
                     <Col></Col>
                     <Col></Col>
                     <Col>
-                    <p>Module</p>
+                    <p>Strings</p>
                     <img src={sadPlanet} className="planet" alt="module"/>
                     </Col>
                 </Row>
@@ -44,13 +44,13 @@ export default class CourseDashboard extends Component{
                     <Col></Col>
                     <Col></Col>
                     <Col>
-                    <p>Module</p>
+                    <p>Expressions</p>
                     <img src={happyPlanet} className="planet" alt="module"/>
                     </Col>
                     <Col></Col>
                     <Col></Col>
                     <Col>
-                    <p>Module</p>
+                    <p>Conditionals</p>
                     <img src={sadPlanet} className="planet" alt="module"/>
                     </Col>
                     <Col></Col>
@@ -60,7 +60,7 @@ export default class CourseDashboard extends Component{
                         <ProgressBar striped variant="success" now={40} key={1}/>
                         <ProgressBar striped variant="warning" now={20} key={2}/>
                     </ProgressBar ><br />
-                    <h1>Java</h1>
+                    <h1>Python</h1>
                 </center>
             </Container>
             </div>

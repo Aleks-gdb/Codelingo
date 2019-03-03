@@ -19,7 +19,7 @@ class Timer extends Component {
     } else {
       clearInterval(timer);
       this.setState({ timeUp: true });
-      console.log("done");
+      console.log("done");  
     }
   }
 

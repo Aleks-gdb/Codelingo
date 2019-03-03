@@ -5,6 +5,7 @@ import HomePage from "../pages/Home";
 import Navigation from './Navigation';
 import Login from "./Login";
 import QuestionPage from "../pages/QuestionPage";
+import Profile from "../pages/Profile";
 
 export default class Routes extends Component {
   render() {
@@ -15,6 +16,7 @@ export default class Routes extends Component {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/profile" component={Profile} />
           <Route exact path="/questions" component={QuestionPage}/>
         </div>
       </BrowserRouter>

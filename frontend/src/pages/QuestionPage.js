@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import { Row, Col, Button, Form } from "react-bootstrap";
 import QuestionCard from "../Components/QuestionCard";
+import Container from 'react-bootstrap/Container';
 import Timer from "../Components/Timer";
 import "../css/QuestionPage.css";
 import Result from "../Components/Result";

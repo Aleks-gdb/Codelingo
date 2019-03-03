@@ -7,7 +7,7 @@ import { logoutUser } from "../actions/authentication";
 import { withRouter } from "react-router-dom";
 import logo from "../images/codelingowo.png";
 
-class Navigation extends Component {
+class UserNav extends Component {
   onLogout(e) {
     e.preventDefault();
     this.props.logoutUser(this.props.history);
@@ -16,32 +16,33 @@ class Navigation extends Component {
   render() {
     const { isAuthenticated, user } = this.props.auth;
     const authLink = (
-      <ButtonGroup id="loginButtonGroup" aria-label="Basic">
+        <ButtonGroup id="loginButtonGroup" aria-label="Basic">
         <Button
-          id="loginButton"
+          id="account"
           variant="success"
           size="lg"
           className="Rubik"
           style={{ fontSize: "18px" }}
-          href="#"
-          onClick={this.onLogout.bind(this)}
+          href="/profile"
         >
-          Logout
+          Account
         </Button>
-      </ButtonGroup>
-    );
+        </ButtonGroup>
+    )
+    
     const guestLinks = (
         <Button
-          id="loginButton"
+          id="account"
           variant="success"
           size="lg"
           className="Rubik"
           style={{ fontSize: "18px" }}
-          href="/login"
+          href="/profile"
         >
-          Login
+          Account
         </Button>
     );
+    
     return (
       <Navbar
         style={{ backgroundColor: "#171717" }}
@@ -51,13 +52,13 @@ class Navigation extends Component {
         <Navbar.Brand href="/" className="mr-auto">
           <img src={logo} className="logo" alt="codelingo" />
         </Navbar.Brand>
-        {isAuthenticated ? authLink : guestLinks}
+        <Nav className="ml-auto">{isAuthenticated ? authLink : guestLinks}</Nav>
       </Navbar>
     );
   }
 }
 
-Navigation.propTypes = {
+UserNav.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
 };
@@ -69,4 +70,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { logoutUser }
-)(withRouter(Navigation));
+)(withRouter(UserNav));

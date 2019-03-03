@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
+import Container from 'react-bootstrap/Container';
 import "../css/QuestionCard.css";
 class QuestionCard extends Component {
   constructor(props) {

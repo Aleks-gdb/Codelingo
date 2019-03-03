@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import { Row, Col, Image, Button } from "react-bootstrap";
+import Container from 'react-bootstrap/Container';
 import Navigation from "../Components/Navigation";
 import laptop from "../images/laptop.png";
 

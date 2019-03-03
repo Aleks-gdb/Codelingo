@@ -9,6 +9,7 @@ import "./App.css";
 import QuestionPage from "./pages/QuestionPage";
 import Navigation from "./Components/Navigation";
 import HomePage from "./pages/Home";
+import Profile from "./pages/Profile";
 import "./App.css";
 class App extends Component {
   render() {

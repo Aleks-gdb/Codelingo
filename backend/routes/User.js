@@ -7,13 +7,17 @@ const passport = require('passport');
 const bodyParser = require('body-parser');
 const validateRegisterInput = require('../validation/register');
 const validateLoginInput = require('../validation/login');
-
+const mongoose = require('mongoose');
 const User = require('../models/User');
 
 router.use(bodyParser.urlencoded({extended: false}));
 router.use(bodyParser.json());
 
 router.post('/register', function (req, res) {
+  mongoose.connect(config.DB, {userNewUrlParser: true}).then(
+    () => { console.log('Python Database is connected') },
+    err => { console.log('Cannot not connect to the database' + err) }
+  );
   console.log(req.body);
   const { errors, isValid } = validateRegisterInput(req.body);
   console.log('User being added');
@@ -68,6 +72,10 @@ router.post('/register', function (req, res) {
 })
 
 router.post('/login', (req, res) => {
+  mongoose.connect(config.DB, {userNewUrlParser: true}).then(
+    () => { console.log('Python Database is connected') },
+    err => { console.log('Cannot not connect to the database' + err) }
+  );
 
   const { errors, isValid } = validateLoginInput(req.body);
 
@@ -113,6 +121,10 @@ router.post('/login', (req, res) => {
 });
 
 router.get('/me', passport.authenticate('jwt', { session: false }), (req, res) => {
+  mongoose.connect(config.DB, {userNewUrlParser: true}).then(
+    () => { console.log('Python Database is connected') },
+    err => { console.log('Cannot not connect to the database' + err) }
+  );
   return res.json({
     id: req.user.id,
     name: req.user.name,

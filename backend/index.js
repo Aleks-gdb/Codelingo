@@ -1,17 +1,18 @@
 const express = require('express');
 const mongoose = require('mongoose');
+
 const bodyParser = require('body-parser')
 const passport = require('passport');
 const config = require('./db');
 
 const users = require('./routes/user');
-const pymodules = require('./routes/module');
+const python = require('./routes/PythonRoutes');
 
-
-mongoose.connect(config.DB, { useNewUrlParser: true }).then(
-  () => { console.log('Database is connected') },
+mongoose.connect(config.DB, {userNewUrlParser: true}).then(
+  () => { console.log('Test Database is connected') },
   err => { console.log('Cannot not connect to the database' + err) }
 );
+
 
 // mongoose.connection.on('open', function (ref) {
 //   console.log('Connected to mongo server.');
@@ -30,8 +31,7 @@ require('./passport')(passport);
 const PORT = process.env.PORT || 4000;
 
 app.use('/api/users', users);
-app.use('/modules/python',pymodules);
-
+app.use('/python/', python);
 app.get('/', function (req, res) {
   res.send('hello');
 });
@@ -45,3 +45,5 @@ app.listen(PORT, () => {
         console.log(`Server failed to connect`);
     }
 })
+
+

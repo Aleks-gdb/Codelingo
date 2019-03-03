@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../actions/authentication";
 import { withRouter } from "react-router-dom";
 import logo from "../images/codelingowo.png";
-
+import "../css/UserNav.css";
 class UserNav extends Component {
   onLogout(e) {
     e.preventDefault();

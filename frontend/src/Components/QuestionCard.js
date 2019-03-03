@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form } from "react-bootstrap";
 import "../css/QuestionCard.css";
+import UserNav from "./UserNav";
 class QuestionCard extends Component {
   constructor(props) {
     super(props);

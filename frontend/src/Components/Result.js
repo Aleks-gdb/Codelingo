@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../css/Result.css";
+import UserNav from "./UserNav";
 
 class Result extends Component {
   constructor(props) {
@@ -11,6 +12,7 @@ class Result extends Component {
   correct() {
     return (
       <div className="result bg-success" id="correct">
+      <UserNav/>
         <h1>Correct !</h1>
         <h2>The correct answer is:</h2>
         <div id="answer">

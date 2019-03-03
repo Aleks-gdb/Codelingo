@@ -5,6 +5,7 @@ import HomePage from "../pages/Home";
 import Navigation from './Navigation';
 import Login from "./Login";
 import QuestionPage from "../pages/QuestionPage";
+import CourseDashboard from "../pages/courseDashboard/CourseDashboard";
 
 export default class Routes extends Component {
   render() {
@@ -16,6 +17,7 @@ export default class Routes extends Component {
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/questions" component={QuestionPage}/>
+          <Route exact path="/module" component={CourseDashboard}/>
         </div>
       </BrowserRouter>
     );

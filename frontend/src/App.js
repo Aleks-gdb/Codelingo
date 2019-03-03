@@ -15,8 +15,6 @@ import axios from 'axios';
 import "./App.css";
 
 
-const expressions = axios.get('/python/expressions');
-console.log(expressions);
 class App extends Component {
   render() {
     return (

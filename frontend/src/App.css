@@ -86,3 +86,8 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.fixed-top{
+  position:fixed;
+  top: 0;
+}

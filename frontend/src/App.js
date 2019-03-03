@@ -16,7 +16,6 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <header className="App-header">
-            <Navigation />
             <Routes />
           </header>
         </div>

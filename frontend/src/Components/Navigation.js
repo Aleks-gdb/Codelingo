@@ -51,7 +51,7 @@ class Navigation extends Component {
         <Navbar.Brand href="/" className="mr-auto">
           <img src={logo} className="logo" alt="codelingo" />
         </Navbar.Brand>
-        <Nav className="ml-auto">{isAuthenticated ? authLink : guestLinks}</Nav>
+        {isAuthenticated ? authLink : guestLinks}
       </Navbar>
     );
   }

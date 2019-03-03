@@ -14,9 +14,9 @@ class HomePage extends Component {
             <Col md={6} className="no-padding">
               <div className="registration">
                 <h2 className="registrationText">
-                  Make your coding skills out of this world
+                  Make your coding skills out of this world.
                 </h2>
-                <Button id="registrationButton" variant="success"  size="lg">
+                <Button id="registrationButton" variant="success" href="/register" size="lg">
                   <h3>Register</h3>
                 </Button>
               </div>

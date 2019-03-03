@@ -1,14 +1,11 @@
 import React, { Component } from "react";
 import { Row, Col, Image, Button, ProgressBar } from "react-bootstrap";
-import Navigation from "../Components/UserNav";
 import "../css/Profile.css";
 
 class Profile extends Component {
     render() {
         return (
             <div id = "background">
-                <br />
-                <br />
                 <p>Welcome, Aleks!</p>
                 <br />
                 <center><h2>Python</h2>

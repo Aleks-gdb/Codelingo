@@ -1,42 +1,62 @@
-import React, { Component, Button } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { Component } from "react";
+import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import QuestionCard from "../Components/QuestionCard";
 import Timer from "../Components/Timer";
 import "../css/QuestionPage.css";
+
+import logo from "../images/codelingowo.png";
 
 var j = require("../json_tests/test");
 
 class QuestionPage extends Component {
   constructor(props) {
     super(props);
-    this.state = { current: "neutral", question: 1 };
+    this.state = { selection: " ", timeUp: false };
+  }
+
+  createCards(answers) {
+    let size = 12 / answers.length;
+
+    return answers.map(element => (
+      <Col md={size} align="center">
+        <QuestionCard answer={element} />
+      </Col>
+    ));
   }
 
   render() {
     return (
       <div className="questionPage">
         <Container>
-          <Row>
+          <Row id="questionPageLogo">
+            <Col md={12}>
+              <a href="#home">
+                <img src={logo} className="qPagelogo" alt="" />
+              </a>
+            </Col>
+          </Row>
+
+          <Row className="countdown">
             <Col>
-              <h1>{j.Question.text}</h1>
+              <Timer time={30} />
             </Col>
           </Row>
 
           <Row>
             <Col>
-              <Timer />
+              <h1 id="question">{j.Question.text}</h1>
             </Col>
           </Row>
 
           <Row id="qCards" fluid>
-            <Col md={4}>
-              <QuestionCard answer={j.Question.answers[0]} />
-            </Col>
-            <Col md={4}>
-              <QuestionCard answer={j.Question.answers[1]} />
-            </Col>
-            <Col md={4}>
-              <QuestionCard answer={j.Question.answers[2]} />
+            {this.createCards(j.Question.answers)}
+          </Row>
+
+          <Row>
+            <Col md={12} align="right">
+              <Button id="submitButton" variant="success" size="lg">
+                Submit
+              </Button>
             </Col>
           </Row>
         </Container>

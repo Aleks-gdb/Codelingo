@@ -3,11 +3,23 @@
   height: 100vh;
 }
 
-.questionPage h1 {
+#question {
   color: white;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 #qCards {
   display: inline;
+}
+
+.countdown {
+  margin-top: 10vh;
+}
+
+#questionPageLogo {
+  margin-top: 3vh;
+}
+.qPagelogo {
+  height: 4rem;
+  margin-left: -3vw;
 }

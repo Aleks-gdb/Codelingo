@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import "../css/QuestionCard.css";
 class QuestionCard extends Component {
   constructor(props) {
     super(props);
     this.props = props;
-    this.state = {};
   }
 
   render() {
@@ -20,4 +19,5 @@ class QuestionCard extends Component {
     );
   }
 }
+
 export default QuestionCard;

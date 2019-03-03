@@ -1,15 +1,22 @@
 .questionCard {
-  background-color: black;
   border-style: solid;
   border-color: white;
   border-width: thick;
   border-radius: 20px;
-  width: 25vw;
+  width: auto;
   height: 20vh;
 }
 
 .questionCard h1 {
   color: white;
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 7vh;
+}
+
+.questionCard:hover {
+  background-color: green !important;
+}
+
+.questionCard:click {
+  background-color: goldenrod !important;
 }

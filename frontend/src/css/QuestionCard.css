@@ -13,10 +13,19 @@
   margin-top: 7vh;
 }
 
+.questionCard label {
+  width: fill;
+  height: fill;
+  border-radius: 15px;
+}
 .questionCard:hover {
   background-color: green !important;
 }
 
-.questionCard:click {
-  background-color: goldenrod !important;
+input[type="radio"]:checked + label {
+  background-color: green;
+}
+
+input[type="radio"] {
+  visibility: hidden;
 }

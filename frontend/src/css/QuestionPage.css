@@ -23,3 +23,9 @@
   height: 4rem;
   margin-left: -3vw;
 }
+
+#submitButton {
+  width: 10vw;
+  height: 5vh;
+  margin-top: 10vh;
+}

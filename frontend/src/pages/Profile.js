@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import { Row, Col, Image, Button, ProgressBar } from "react-bootstrap";
 import "../css/Profile.css";
+import UserNav from "../Components/UserNav";
 
 class Profile extends Component {
   render() {
     return (
       <div id="background">
-        <p>Welcome, Aleks!</p>
+      <UserNav/>
         <br />
+        <p>Welcome, Aleks!</p>
+        <div id="bars">
         <center>
           <h2>Python</h2>
           <ProgressBar
@@ -31,6 +34,7 @@ class Profile extends Component {
             style={{ maxWidth: 500, minHeight: 20 }}
           />
         </center>
+        </div>
       </div>
     );
   }

@@ -14,6 +14,7 @@ class Login extends Component {
         }
         this.handleInputChange =this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.routeChange = this.routeChange.bind(this);
     }
 
     handleInputChange(e) {
@@ -37,6 +38,11 @@ class Login extends Component {
                 errors:nextProps.errors
             });
         }
+    }
+
+    routeChange(){
+        let path = `../profile`;
+        this.props.history.push(path);
     }
 
     render() {
@@ -71,7 +77,7 @@ class Login extends Component {
                     {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
                 </div>
                 <div className="form-group">
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-primary" onClick={this.routeChange}>
                         Login User
                     </button>
                 </div>

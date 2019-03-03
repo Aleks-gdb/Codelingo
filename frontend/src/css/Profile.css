@@ -4,4 +4,9 @@
   background-size: 100vw;
   background-color: #2b223d;
   height: 77vh;
+  margin-top: 60px;
+}
+
+#bars{
+  margin-top: 30px;
 }

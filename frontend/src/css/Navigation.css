@@ -4,24 +4,31 @@
   position: sticky;
 }
 
-.logo{
-  height:4rem;
-  margin-left:15vw;
+.logo {
+  height: 4rem;
 }
 
-#logo {
-  margin-left: vw;
-}
-
-#loginButton {
-  color: black;
-  margin-top:-1rem;
-}
-
-@media screen and (min-width:768px){
-  #loginButton{
-    margin-right:20vw;
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 15vw;
   }
 }
 
 
+
+#loginButton {
+  color: black;
+  background-color: #75af5b;
+}
+
+@media screen and (min-width: 768px) {
+  #loginButtonGroup {
+    margin-right: 20vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #loginButtonGroup {
+    margin-right: 10vw;
+  }
+}

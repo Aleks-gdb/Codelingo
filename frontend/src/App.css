@@ -72,6 +72,17 @@
   width:100%
 }
 
+.no-padding
+{
+  padding: 0px;
+}
+
+.Rubik{
+  font-family: 'rubik', sans-serif;
+  font-weight:600;
+}
+
 .row{
-  width:100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }

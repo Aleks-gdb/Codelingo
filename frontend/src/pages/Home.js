@@ -10,12 +10,12 @@ class HomePage extends Component {
       <Container className="homePage fullscreen" fluid>
         <div id="space">
           <Row>
-            <Col md={6}>
+            <Col md={6} className="no-padding">
               <div className="registration">
                 <h2 className="registrationText">
                   Make your coding skills out of this world
                 </h2>
-                <Button id="registrationButton" variant="success" className="mr-auto" size="lg">
+                <Button id="registrationButton" variant="success"  size="lg">
                   <h3>Register</h3>
                 </Button>
               </div>
@@ -29,13 +29,13 @@ class HomePage extends Component {
             </Col>
             <Col sm={6}>
               <Row>
-                <Col md={12} align="left">
+                <Col md={12} align="left" style={{color:"#171717"}} className="Rubik">
                   <h2>Learn and Improve your programming skills.</h2>
                 </Col>
               </Row>
               <Row>
                 <Col md={10} align="left">
-                  <p>
+                  <p style={{color:"#505050"}} className="Rubik">
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation

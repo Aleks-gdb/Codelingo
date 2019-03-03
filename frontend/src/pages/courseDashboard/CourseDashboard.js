@@ -10,8 +10,8 @@ import "../../css/CourseDashboard.css";
 export default class CourseDashboard extends Component{
     render() {
         return(
+            <div id = "background"><br /><br />
             <Container className="courseDashboard">
-            <div>
                 <Row>
                     <Col>
                     <img src={happyPlanet} className="planet" alt="module"/>
@@ -56,8 +56,8 @@ export default class CourseDashboard extends Component{
                     </ProgressBar ><br />
                     <h1>Java</h1>
                 </center>
-            </div>
             </Container>
+            </div>
             
         )
     }

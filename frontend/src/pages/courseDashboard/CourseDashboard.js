@@ -1,9 +1,10 @@
 import React, {Component} from "react";
-import {Row,Col,Image, Button} from "react-bootstrap";
+import {Row,Col,Image, Button, ProgressBar} from "react-bootstrap";
 import Container from 'react-bootstrap/Container';
 import Navigation from "../../Components/Navigation";
 import happyPlanet from "../../images/Happy Planet.png";
 import sadPlanet from "../../images/Sad Planet.png";
+import neutralPlanet from "../../images/Neutral Planet.png";
 import "../../css/CourseDashboard.css";
 
 export default class CourseDashboard extends Component{
@@ -13,12 +14,12 @@ export default class CourseDashboard extends Component{
             <div>
                 <Row>
                     <Col>
-                    <img src={sadPlanet} className="planet" alt="module"/>
+                    <img src={happyPlanet} className="planet" alt="module"/>
                     </Col>
                     <Col></Col>
                     <Col></Col>
                     <Col>
-                    <img src={sadPlanet} className="planet" alt="module"/>
+                    <img src={neutralPlanet} className="planet" alt="module"/>
                     </Col>
                     <Col></Col>
                     <Col></Col>
@@ -39,7 +40,7 @@ export default class CourseDashboard extends Component{
                     <Col></Col>
                     <Col></Col>
                     <Col>
-                    <img src={sadPlanet} className="planet" alt="module"/>
+                    <img src={happyPlanet} className="planet" alt="module"/>
                     </Col>
                     <Col></Col>
                     <Col></Col>
@@ -47,9 +48,17 @@ export default class CourseDashboard extends Component{
                     <img src={sadPlanet} className="planet" alt="module"/>
                     </Col>
                     <Col></Col>
-                </Row>
+                </Row><br /><br /><br />
+                <center>
+                    <ProgressBar style={{ maxWidth: 1000, minHeight: 25 }}>
+                        <ProgressBar striped variant="success" now={40} key={1}/>
+                        <ProgressBar striped variant="warning" now={20} key={2}/>
+                    </ProgressBar ><br />
+                    <h1>Java</h1>
+                </center>
             </div>
             </Container>
+            
         )
     }
 }

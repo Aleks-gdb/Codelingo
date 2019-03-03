@@ -9,6 +9,7 @@ const validateRegisterInput = require('../validation/register');
 const validateLoginInput = require('../validation/login');
 const mongoose = require('mongoose');
 const User = require('../models/User');
+const config = require('../db');
 
 router.use(bodyParser.urlencoded({extended: false}));
 router.use(bodyParser.json());

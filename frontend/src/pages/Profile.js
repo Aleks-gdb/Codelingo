@@ -12,6 +12,7 @@ class Profile extends Component {
         <p>Welcome, Aleks!</p>
         <div id="bars">
         <center>
+        <a href="../module"><Button id="links">
           <h2>Python</h2>
           <ProgressBar
             striped
@@ -19,6 +20,8 @@ class Profile extends Component {
             now={80}
             style={{ maxWidth: 500, minHeight: 20 }}
           />
+          </Button></a>
+          <a href="../module"><div id="bars"><Button id="links">
           <h2>Java</h2>
           <ProgressBar
             striped
@@ -26,13 +29,16 @@ class Profile extends Component {
             now={40}
             style={{ maxWidth: 500, minHeight: 20 }}
           />
-          <h2>Data Structures and Algorithms</h2>
+          </Button></div></a>
+          <a id="links" href="../module"><div id="bars">
+          <Button id="links"><h2>Data Structures and Algorithms</h2>
           <ProgressBar
             striped
             variant="info"
             now={65}
             style={{ maxWidth: 500, minHeight: 20 }}
           />
+          </Button></div></a>
         </center>
         </div>
       </div>

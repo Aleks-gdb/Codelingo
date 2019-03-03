@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Timer from "../Components/Timer";
 import "../css/QuestionPage.css";
 import Result from "../Components/Result";
-
+import UserNav from "../Components/UserNav"
 import logo from "../images/codelingowo.png";
 
 var j = require("../json_tests/test");
@@ -55,6 +55,7 @@ class QuestionPage extends Component {
   render() {
     return (
       <div className="questionPage">
+      <UserNav/>
         <Container>
           <Row id="questionPageLogo">
             <Col md={12}>

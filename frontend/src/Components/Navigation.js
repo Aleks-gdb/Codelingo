@@ -31,7 +31,6 @@ class Navigation extends Component {
       </ButtonGroup>
     );
     const guestLinks = (
-      <ButtonGroup id="loginButtonGroup" aria-label="Basic">
         <Button
           id="loginButton"
           variant="success"
@@ -42,16 +41,6 @@ class Navigation extends Component {
         >
           Login
         </Button>
-        <Button
-          id="loginButton"
-          size="lg"
-          className="Rubik"
-          style={{ fontSize: "18px" }}
-          href="/register"
-        >
-          Register
-        </Button>
-      </ButtonGroup>
     );
     return (
       <Navbar
